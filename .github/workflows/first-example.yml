@@ -1,0 +1,25 @@
+name: my first workflow
+
+on: push
+jobs:
+    first_job:
+        runs-on: ubuntu-latast
+        steps:
+        -  name: Checkout Repo
+           uses: action/checkout@v4
+
+        -   name: Welocome massage
+            run: |
+             echo "My first Github Action job"
+             ls -ltra
+             cat README.md
+
+        -   name: Genrate ASCI Artwork
+            run: cowsay -f dragon "Run for cover, I'm a DRAGON ... RAWR"  >>  dragon.txt
+
+
+        # -   name: list files
+        #     run: ls
+        
+        # -   name: Read files
+        #     run: cat README.md
