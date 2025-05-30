@@ -16,10 +16,3 @@ jobs:
 
         -   name: Genrate ASCI Artwork
             run: cowsay -f dragon "Run for cover, I'm a DRAGON ... RAWR"  >>  dragon.txt
-
-
-        # -   name: list files
-        #     run: ls
-        
-        # -   name: Read files
-        #     run: cat README.md
