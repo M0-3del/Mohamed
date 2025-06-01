@@ -2,9 +2,9 @@ name: WorkFlow filters and activities
 on:
     workflow_dispatch: 
     push: 
-        branches-ignore:
-            - feature/*      # feature/add-music , feature/updateImage
-            - test/**        # test/ui/index ,test/checkout/pyment
+        # branches-ignore:
+        #     - feature/*      # feature/add-music , feature/updateImage
+        #     - test/**        # test/ui/index ,test/checkout/pyment
         branches: 
             - main
             - '!feature/*'   # ignore pushing to any bransh name starting with feature using !
